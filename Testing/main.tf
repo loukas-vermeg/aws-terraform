@@ -1,16 +1,17 @@
 terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "4.47.0"
-    }
-    cloud {
+   cloud {
     organization = "mbenyedder"
 
     workspaces {
       name = "example-workspace"
     }
   }
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "4.47.0"
+    }
+   
   }
 }
 
